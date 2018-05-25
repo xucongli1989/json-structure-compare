@@ -1,1 +1,1 @@
-file-report layout:side-by-side options:display-all,line-numbers output-to:"./dist/report.htm" output-options:wrap-word,html-color D:\Users\xucl\Desktop\json-structure-compare\dist\a.txt D:\Users\xucl\Desktop\json-structure-compare\dist\b.txt
+file-report layout:side-by-side options:display-all,line-numbers output-to:"./dist/report.htm" output-options:wrap-word,html-color D:\MyData\GitHub\json-structure-compare\dist\a.txt D:\MyData\GitHub\json-structure-compare\dist\b.txt

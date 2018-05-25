@@ -7,7 +7,7 @@ This is a json structure compare tool,you can input two json data and run node s
 
 - Modify `./config.ts`,and assign your `BCompPath`
 
-- Set your json to `./data.ts`
+- Set your json to `./data.ts`(variable `a` and `b`)
 
 - Run script `npm run build`
 
