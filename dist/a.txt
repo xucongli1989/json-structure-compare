@@ -1,0 +1,9 @@
+refundRule
+segmentId
+tagList
+tagList.0
+tagList.0.desc
+tagList.0.name
+tagList.0.test
+tagList.0.test.info
+tagList.0.test.info.title

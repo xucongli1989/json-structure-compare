@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<style>
+.AlignLeft { text-align: left; }
+.AlignCenter { text-align: center; }
+.AlignRight { text-align: right; }
+body { font-family: sans-serif; font-size: 11pt; }
+td { vertical-align: top; padding-left: 4px; padding-right: 4px; }
+
+tr.SectionGap td { font-size: 4px; border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionBegin td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionMiddle td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SubsectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+tr.SubsectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+table.fc { border-top: 1px solid Black; border-left: 1px solid Black; width: 100%; font-family: monospace; font-size: 10pt; }
+td.TextItemInsigAdd { color: #000000; background-color: #EEEEFF; }
+td.TextItemInsigDel { color: #000000; background-color: #EEEEFF; text-decoration: line-through; }
+td.TextItemInsigMod { color: #000000; background-color: #EEEEFF; }
+td.TextItemInsigOrphan { color: #000000; background-color: #FAEEFF; }
+td.TextItemNum { color: #404040; background-color: #D4D0C8; }
+td.TextItemSame { color: #000000; background-color: #FFFFFF; }
+td.TextItemSigAdd { color: #000000; background-color: #FFE3E3; }
+td.TextItemSigDel { color: #000000; background-color: #FFE3E3; text-decoration: line-through; }
+td.TextItemSigMod { color: #000000; background-color: #FFE3E3; }
+td.TextItemSigOrphan { color: #000000; background-color: #F1E3FF; }
+.TextSegInsigDiff { color: #0000FF; }
+.TextSegReplacedDiff { color: #0000FF; font-style: italic; }
+.TextSegSigDiff { color: #FF0000; }
+</style>
+<title>文本比较(T)</title>
+</head>
+<body>
+文本比较(T)<br/>
+已产生: 2018/5/25 17:18:42<br/>
+&nbsp; &nbsp;
+<br/>
+模式:&nbsp; 全部 &nbsp;
+<br/>
+左边文件: D:\Users\xucl\Desktop\json-structure-compare\dist\a.txt &nbsp;
+<br/>
+右边文件: D:\Users\xucl\Desktop\json-structure-compare\dist\b.txt &nbsp;
+<br/>
+<table class="fc" cellspacing="0" cellpadding="0">
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight">1</td>
+<td class="TextItemSigMod"><span class="TextSegSigDiff">refundRule</span></td>
+<td class="AlignCenter">+-</td>
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight">2</td>
+<td class="TextItemSigMod"><span class="TextSegSigDiff">segmentId</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight">3</td>
+<td class="TextItemSame">tagList</td>
+<td class="AlignCenter">=</td>
+<td class="TextItemNum AlignRight">1</td>
+<td class="TextItemSame">tagList</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">4</td>
+<td class="TextItemSame">tagList.0</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">2</td>
+<td class="TextItemSame">tagList.0</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">5</td>
+<td class="TextItemSame">tagList.0.desc</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">3</td>
+<td class="TextItemSame">tagList.0.desc</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight">6</td>
+<td class="TextItemSame">tagList.0.name</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">4</td>
+<td class="TextItemSame">tagList.0.name</td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight">7</td>
+<td class="TextItemSigMod"><span class="TextSegSigDiff">tagList.0.test</span></td>
+<td class="AlignCenter">+-</td>
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight">8</td>
+<td class="TextItemSigMod"><span class="TextSegSigDiff">tagList.0.test.info</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight">9</td>
+<td class="TextItemSigMod"><span class="TextSegSigDiff">tagList.0.test.info.title</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="TextItemNum AlignRight">&nbsp;</td>
+<td class="TextItemSame">&nbsp;</td>
+</tr>
+</table>
+<br/>
+</body>
+</html>
