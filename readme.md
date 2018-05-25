@@ -15,5 +15,5 @@ This is a json structure compare tool,you can input two json data and run node s
 
 ## Result Preview
 
-
+![](https://raw.githubusercontent.com/xucongli1989/json-structure-compare/master/img.jpg)
 
