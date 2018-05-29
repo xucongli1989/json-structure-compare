@@ -1,6 +1,6 @@
 {
   "name": "json-structure-compare",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This is a json structure compare tool,you can input two json data and run node script to get a comparative report via Beyond Compare.",
   "main": "index.ts",
   "scripts": {
