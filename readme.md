@@ -7,16 +7,16 @@ This is a json structure compare tool,you can input two json data and run node s
 
 - `npm install json-structure-compare --save-dev`
 
-- Create file `test.ts` and write your code like this
+- Create file `test.js` and write your code like this
 
-        import { Compare } from 'json-structure-compare'
-		let obj = new Compare({
+		let moduleInfo = require('json-structure-compare');
+		let obj = new moduleInfo.Compare({
 			dataA:{"a":"test"},
 			dataB:{"b":"test"}
 		});
 		obj.run();
 
-- Run script `ts-node test.ts`
+- Run script `node test.js`
 
 - So,you will get your comparative result,see your console's log.
 
