@@ -3,21 +3,64 @@ This is a json structure compare tool,you can input two json data and run node s
 
 ## Start
 
-- `npm install`
+- Create your project
 
-- Modify `./config.ts`,and assign your `BCompPath`
+- `npm install json-structure-compare --save-dev`
 
-- Set your json to `./data.ts`(variable `a` and `b`)
+- Create file `test.ts` and write your code like this
 
-- Run script `npm run build`
+        import { Compare } from 'json-structure-compare'
+		let obj = new Compare({
+			dataA:{"a":"test"},
+			dataB:{"b":"test"}
+		});
+		obj.run();
 
-- So,you will get your comparative result,open it from `./dist/report.htm`
+- Run script `ts-node test.ts`
+
+- So,you will get your comparative result,see your console's log.
+
+## Config Options
+
+    /**
+	 * The default config.
+	 */
+	interface IDefaultConfig {
+	    /**
+	     * Beyond Compare soft path.
+	     */
+	    beyondComparePath: string
+	    /**
+	     * Your work space for output 
+	     */
+	    outputPath: string
+	    /**
+	     * Json A to compare.
+	     */
+	    dataA: IAnyPropObject
+	    /**
+	     * Json B to compare.
+	     */
+	    dataB: IAnyPropObject
+	}
+
+The default value is:
+
+    let defaultConfig: IDefaultConfig = {
+	    beyondComparePath: "C:\\Program Files\\Beyond Compare 4\\BComp.exe",
+	    outputPath: path.resolve("./dist/"),
+	    dataA: data.a,
+	    dataB: data.b
+	}
+
 
 ## Theory
 
-- Convert json object to path string with keys,like `A.B.C.D.E...`
+- Convert json object to path string array with keys,like `["A.B","A.B.C","A.B.C.D",...]`
 
 - Compare the lines use Beyond Compare tool.
+
+- Notice:If one key is `Array` ,then compare the first item only.
 
 ## Result Preview
 
