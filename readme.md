@@ -3,16 +3,18 @@ This is a json structure compare tool,you can input two json data and run node s
 
 ## Start
 
-- Create your project
+- Create your project,and it has `./dist/` directory
 
 - `npm install json-structure-compare --save-dev`
 
-- Create file `test.js` and write your code like this
+- Create file `./test.js` and write your code like this
 
 		let moduleInfo = require('json-structure-compare');
 		let obj = new moduleInfo.Compare({
-			dataA:{"a":"test"},
-			dataB:{"b":"test"}
+		    dataA: { "a": "test" },
+		    dataB: { "b": "test" },
+		    beyondComparePath: "C:\\Program Files (x86)\\Beyond Compare 4\\BComp.exe",
+		    outputPath: "./dist/"
 		});
 		obj.run();
 
@@ -62,7 +64,7 @@ The default value is:
 
 - Notice:If one key is `Array` ,then compare the first item only.
 
-## Result Preview
+## Demo Result Preview
 
 ![](https://raw.githubusercontent.com/xucongli1989/json-structure-compare/master/img.jpg)
 

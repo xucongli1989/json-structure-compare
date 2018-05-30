@@ -1,7 +1,7 @@
 import * as fs from 'fs'
 import * as path from 'path'
-import * as cmd from 'node-cmd'
 import * as data from './data'
+let cmd = require('node-cmd');
 
 let process = (o) => {
     let result: string[] = [];
@@ -64,11 +64,11 @@ export class Compare {
     }
     run(): void {
         if (!fs.existsSync(this.cfg.beyondComparePath)) {
-            console.error("BeyondComparePath is not exist!");
+            console.error("BeyondComparePath is not exist:" + this.cfg.beyondComparePath);
             return;
         }
         if (!fs.existsSync(this.cfg.outputPath)) {
-            console.error("OutputPath is not exist!");
+            console.error("OutputPath is not exist:" + this.cfg.outputPath);
             return;
         }
 
